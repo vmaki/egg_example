@@ -18,10 +18,18 @@ module.exports = appInfo => {
   // add your middleware config here
   config.middleware = [];
 
+  config.logger = {
+    dir: '/tmp',
+    level: 'DEBUG',
+    outputJSON: true,
+  };
+
   config.alinode = {
     enable: true,
     appid: '83577',
     secret: '3ca4e68432a4d43a4a33e5ccd4c643ab90030554',
+    error_log: [ '/tmp/appname-web.log', '/tmp/common-error.log', '/tmp/egg-agent.log' ],
+    packages: [ '/data/www/egg-example/package.json' ],
   };
 
   // add your user config here
