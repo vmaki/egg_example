@@ -21,6 +21,19 @@ class HomeController extends Controller {
 
     ctx.body = hash;
   }
+
+  async fibonacci() {
+    const { ctx } = this;
+
+    const ret = this.toFibonacci(34);
+
+    ctx.body = ret;
+  }
+
+  toFibonacci(i) {
+    if (i < 2) return i;
+    return this.toFibonacci(i - 2) + this.toFibonacci(i - 1);
+  }
 }
 
 module.exports = HomeController;
