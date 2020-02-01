@@ -19,6 +19,7 @@ module.exports = appInfo => {
   config.middleware = [];
 
   config.alinode = {
+    enable: true,
     appid: '83577',
     secret: '3ca4e68432a4d43a4a33e5ccd4c643ab90030554',
   };
