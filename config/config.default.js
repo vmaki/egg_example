@@ -20,16 +20,11 @@ module.exports = appInfo => {
 
   config.logger = {
     dir: '/tmp',
-    level: 'DEBUG',
-    outputJSON: true,
   };
 
   config.alinode = {
-    enable: true,
-    appid: '83577',
-    secret: '3ca4e68432a4d43a4a33e5ccd4c643ab90030554',
-    error_log: [ '/tmp/appname-web.log', '/tmp/common-error.log', '/tmp/egg-agent.log' ],
-    packages: [ '/data/www/egg-example/package.json' ],
+    appid: '83581',
+    secret: 'f9d2d05eb2dfa1c9626c09d2dd45e32eb67f6b1c',
   };
 
   // add your user config here
